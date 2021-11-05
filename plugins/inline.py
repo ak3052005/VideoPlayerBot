@@ -32,7 +32,7 @@ buttons = [
             
                 
 
-@Client.on_inline_query(filters.inline)
+@Client.on_message(filters.inline)
 async def search(client, query):
     answers = []
     if query.query == "SAF_ONE":
